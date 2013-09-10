@@ -13,26 +13,43 @@
 }
 
 #branding {
-  background: url("../ccts2.png") no-repeat bottom right transparent;
-  background-size:90% auto;
-  padding: 16px 0 20px 25px;
+  padding: 0;
 }
+
+#logo {
+  padding: 0;
+}
+
+#logo img {
+  max-width: 100%;
+  height: auto;
+  width: 100%
+}
+
+/* Social Media Links */
+#followus {
+  margin:1em 0;
+  text-align:left;
+}
+
+#followus a div {
+  display:inline-block;
+  margin-left:4px;
+  margin-right:4px;
+}
+/* End Social Media Links */
+
 @media only screen and (min-width:1025px) {
-  img.site-logo {height:100%;width:100%;}
 }
 
 @media only screen and (min-width:769px) and (max-width:1024px) {
-  img.site-logo {height:80%;width:80%}
 }
 
 @media only screen and (min-width:481px) and (max-width:768px) {
-  img.site-logo {height:70%;width:70%}
 }
 
 @media only screen and (min-width:321px) and (max-width:480px) {
-  img.site-logo {height:50%;width:50%;}
 }
 
 @media only screen and (max-width:320px) {
-  img.site-logo { height:40%; width:40%;}
 }
