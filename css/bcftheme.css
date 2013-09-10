@@ -26,6 +26,12 @@
   width: 100%
 }
 
+#flexslider-1 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
 /* Social Media Links */
 #followus {
   margin:1em 0;
