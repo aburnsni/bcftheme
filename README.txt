@@ -1,3 +1,5 @@
+BCF Drupal theme - Corolla sub-theme created by Footheme.
+
 
 -- SUMMARY --
 
