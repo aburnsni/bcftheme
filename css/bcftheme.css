@@ -8,6 +8,10 @@
  * as well.
  */
 
+#header-wrapper {
+  margin-bottom: .5em;
+}
+
 #site-name {
   display: none;
 }
