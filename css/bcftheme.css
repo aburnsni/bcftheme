@@ -26,6 +26,10 @@
   width: 100%
 }
 
+.region-sidebar-second {
+  margin-top: .5em;
+}
+
 #flexslider-1 {
   margin-left: auto;
   margin-right: auto;
