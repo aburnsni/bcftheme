@@ -16,6 +16,17 @@
  */
 /* -- Delete this line if you want to use this function
 function bcftheme_preprocess_html(&$vars) {
+  // Setup meta tags
+//  $bcfmetatags = array(
+//    '#type' => 'html_tag',
+//    '#tag' => 'meta',
+//    '#attributes' => array(
+//      'name' => 'viewport',
+//      'content' => 'width=device-width, initial-scale=1.0',
+//    )
+//  );
+//  drupal_add_html_head($bcfmetatags, 'device_width_meta');
+//
 }
 function bcftheme_process_html(&$vars) {
 }

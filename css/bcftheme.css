@@ -30,19 +30,21 @@
   width: 100%
 }
 
-.region-sidebar-second {
+.region-sidebar-first, .region-sidebar-second {
   margin-top: .5em;
 }
 
 .block-title {
   border-bottom: 2px solid;
   padding-bottom: 0.2em;
+  margin-bottom: 0.5em;
 }
 
 #flexslider-1 {
   margin-left: auto;
   margin-right: auto;
   width: 90%;
+  margin-bottom:30px;
 }
 
 /* Social Media Links */
@@ -57,6 +59,7 @@
   margin-right:4px;
 }
 /* End Social Media Links */
+
 
 @media only screen and (min-width:1025px) {
 }
