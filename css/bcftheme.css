@@ -61,6 +61,42 @@
 /* End Social Media Links */
 
 
+/* Reponsive Upcoming List */
+
+#block-views-upcoming-events-block-1 {
+  width: 100%;
+  overflow: hidden;
+}
+#block-views-upcoming-events-block-1 .views-field-title {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+@media only screen and (min-width:769px) {
+  #block-views-upcoming-events-block-1 .views-row-1,
+  #block-views-upcoming-events-block-1 .views-row-2,
+  #block-views-upcoming-events-block-1 .views-row-3,
+  #block-views-upcoming-events-block-1 .views-row-4,
+  #block-views-upcoming-events-block-1 .views-row-5 {
+    width: 18%;
+    padding:0 1%;
+    float:left;
+  }
+}
+@media only screen and (max-width:768px) {
+  #block-views-upcoming-events-block-1 .views-row-1,
+  #block-views-upcoming-events-block-1 .views-row-2,
+  #block-views-upcoming-events-block-1 .views-row-3,
+  #block-views-upcoming-events-block-1 .views-row-4,
+  #block-views-upcoming-events-block-1 .views-row-5 {
+    width: 90%;
+    padding:.5em 5%;
+  }
+
+}
+
+/* End Responsive Upcoming List */
+
 @media only screen and (min-width:1025px) {
 }
 
