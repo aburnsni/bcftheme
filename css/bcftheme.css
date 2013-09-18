@@ -40,12 +40,29 @@
   margin-bottom: 0.5em;
 }
 
+/* Correct SF menu colour error */
+.sf-menu.sf-style-default li.active-trail a.sf-depth-1,
+.sf-menu.sf-style-default li.active-trail a.sf-depth-1:visited
+{
+  color: #2E2E2D;
+}
+
+.sf-menu.sf-style-default li.active-trail a.sf-depth-1 .sf-sub-indicator,
+.sf-menu.sf-style-default li.active-trail a.sf-depth-1:visited .sf-sub-indicator
+{
+  background:url("/sites/all/libraries/superfish/images/arrows-777777.png") no-repeat scroll -10px -100px transparent;
+}
+
+/* End Superfish menu corrections */
+
+/* FlexSlider */
 #flexslider-1 {
   margin-left: auto;
   margin-right: auto;
   width: 90%;
   margin-bottom:30px;
 }
+/* End Flexslider */
 
 /* Social Media Links */
 #followus {
