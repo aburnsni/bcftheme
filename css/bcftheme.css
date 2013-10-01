@@ -1,44 +1,33 @@
-/**
- * Footheme footheme.css
- *
- * Use this file to add your custom styles.
- *
- * You can change the name of this file, just
- * remember to update the name in the info file
- * as well.
- */
-
+/* Header */
 #header-wrapper {
   margin-bottom: .5em;
 }
-
 #site-name {
   display: none;
 }
-
 #branding {
   padding: 0;
 }
-
 #logo {
   padding: 0;
 }
-
 #logo img {
   max-width: 100%;
   height: auto;
   width: 100%
 }
+/* End Header */
 
+/* Layout fixes */
 .region-sidebar-first, .region-sidebar-second {
   margin-top: .5em;
 }
-
 .block-title {
   border-bottom: 2px solid;
   padding-bottom: 0.2em;
   margin-bottom: 0.5em;
 }
+/* End Layout Fixes */
 
 /* Correct SF menu colour error */
 .sf-menu.sf-style-default li.active-trail a.sf-depth-1,
@@ -46,13 +35,11 @@
 {
   color: #2E2E2D;
 }
-
 .sf-menu.sf-style-default li.active-trail a.sf-depth-1 .sf-sub-indicator,
 .sf-menu.sf-style-default li.active-trail a.sf-depth-1:visited .sf-sub-indicator
 {
   background:url("/sites/all/libraries/superfish/images/arrows-777777.png") no-repeat scroll -10px -100px transparent;
 }
-
 /* End Superfish menu corrections */
 
 /* FlexSlider */
@@ -69,7 +56,6 @@
   margin:1em 0;
   text-align:left;
 }
-
 #followus a div {
   display:inline-block;
   margin-left:4px;
@@ -88,7 +74,6 @@
   font-weight: bold;
   font-size: 1.2em;
 }
-
 @media only screen and (min-width:769px) {
   #block-views-upcoming-events-block-1 .views-row-1,
   #block-views-upcoming-events-block-1 .views-row-2,
@@ -111,7 +96,6 @@
   }
 
 }
-
 /* End Responsive Upcoming List */
 
 @media only screen and (min-width:1025px) {
