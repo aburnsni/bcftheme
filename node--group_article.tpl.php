@@ -1,0 +1,71 @@
+<?php if ($teaser): ?>
+<!-- <?php print '<pre>'; print_r($node); print '</pre>'; ?> -->
+
+  <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+
+    <?php print render($title_prefix); ?>
+    <h2<?php print $title_attributes; ?>><?php print $title; ?></h2>
+    <?php print render($title_suffix); ?>
+
+    <div class="content"<?php print $content_attributes; ?>>
+      <?php
+        // We hide the comments and links now so that we can render them later.
+        hide($content['comments']);
+        hide($content['links']);
+        print render($content['body']);
+      ?>
+    </div>
+<!--    <?php print render($content['links']); ?>
+    <?php print render($content['comments']); ?>
+-->  </div>
+<?php endif; ?>
+
+<?php if($page): ?>
+
+
+<article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+  <div class="node-inner">
+
+    <?php print $unpublished; ?>
+
+    <?php print render($title_prefix); ?>
+    <?php if ($title || $display_submitted): ?>
+      <header<?php print $header_attributes; ?>>
+
+        <?php if ($title): ?>
+          <h1<?php print $title_attributes; ?>>
+            <?php if (!$page): ?>
+              <a href="<?php print $node_url; ?>" rel="bookmark"><?php print $title; ?></a>
+            <?php elseif ($page): ?>
+              <?php print $title; ?>
+            <?php endif; ?>
+          </h1>
+        <?php endif; ?>
+
+        <?php if ($display_submitted): ?>
+          <p class="submitted"><?php print $submitted; ?></p>
+        <?php endif; ?>
+
+      </header>
+    <?php endif; ?>
+    <?php print render($title_suffix); ?>
+
+    <div<?php print $content_attributes; ?>>
+    <?php print $user_picture; ?>
+    <?php
+      hide($content['comments']);
+      hide($content['links']);
+      print render($content);
+    ?>
+    </div>
+
+    <?php if ($links = render($content['links'])): ?>
+      <nav<?php print $links_attributes; ?>><?php print $links; ?></nav>
+    <?php endif; ?>
+
+    <?php print render($content['comments']); ?>
+
+  </div>
+</article>
+
+<?php endif; ?>
