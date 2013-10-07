@@ -30,17 +30,10 @@
 
 <?php if (!$page): ?>
 <?php
-$link = field_get_items('node', $node, 'field_linkto');
-$link_type = field_view_value('node', $node, 'field_linkto', $link[0]);
-if ($link_type['#markup']== 'Group') {
-      $sslinktid = field_get_items('node', $node, 'field_link_to_group');
-      $sslink = field_view_value('node', $node, 'field_link_to_group', $sslinktid[0]);
-    } else {
-      $sslinknid = field_get_items('node', $node, 'field_link_to_article');
-      $sslink = field_view_value('node', $node, 'field_link_to_article', $sslinknid[0]);
-    }
-    $group_link = l($title,$sslink['#href'], array('absolute' => 'FALSE','html' => 'TRUE'));
-    ?>
+  $sslinknid = field_get_items('node', $node, 'field_link_to_article');
+  $sslink = field_view_value('node', $node, 'field_link_to_article', $sslinknid[0]);
+  $article_link = l($title,$sslink['#href'], array('absolute' => 'FALSE','html' => 'TRUE'));
+?>
 <style>
 #transparency {
   position: absolute;
@@ -82,7 +75,7 @@ padding: 0;
       </div>
       <div id="transparency"></div>
       <div id="slidecontent">
-        <?php echo $group_link;?>
+        <?php echo $article_link;?>
       </div>
     </div>
 <?php endif; ?>
