@@ -22,6 +22,12 @@
 .region-sidebar-first, .region-sidebar-second {
   margin-top: .5em;
 }
+
+#top-pane-title h1 {
+  color: #8C58B7;
+  font-size: 2em;
+  text-transform: none;
+}
 .block-title {
   border-bottom: 2px solid;
   padding-bottom: 0.2em;
