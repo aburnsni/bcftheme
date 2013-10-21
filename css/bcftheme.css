@@ -18,6 +18,12 @@
 }
 /* End Header */
 
+/* Color fixes for contrast */
+.form-required {
+  color:af0000;
+}
+/* End color contrast fixes */
+
 /* Layout fixes */
 .region-sidebar-first, .region-sidebar-second {
   margin-top: .5em;
@@ -36,6 +42,9 @@
 /* End Layout Fixes */
 
 /* Correct SF menu colour error */
+#block-superfish-1 h2 {
+  color:#f8f8f8;
+  }
 .sf-menu.sf-style-default li.active-trail a.sf-depth-1,
 .sf-menu.sf-style-default li.active-trail a.sf-depth-1:visited
 {
