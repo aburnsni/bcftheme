@@ -42,9 +42,9 @@
 /* End Layout Fixes */
 
 /* Correct SF menu colour error */
-#block-superfish-1 h2 {
+#block-superfish-1 h2.block-title {
   color:#f8f8f8;
-  }
+}
 .sf-menu.sf-style-default li.active-trail a.sf-depth-1,
 .sf-menu.sf-style-default li.active-trail a.sf-depth-1:visited
 {
