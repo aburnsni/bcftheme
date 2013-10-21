@@ -69,6 +69,17 @@
 }
 /* End Social Media Links */
 
+/* OG Events list */
+
+.view-og-events .views-row {
+  border-bottom: 1px solid #E1E1E1;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.view-og-events .views-row-last {
+  border-bottom: none;
+}
+/* End OG Events list */
 
 /* Reponsive Upcoming List */
 
