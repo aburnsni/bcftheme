@@ -1,5 +1,6 @@
 <?php if ($page): ?>
 <!-- <?php print '<pre>'; print_r($node); print '</pre>'; ?> -->
+<?php print_r($node->field_slideshow_picture); ?>
 
   <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
@@ -71,7 +72,10 @@ padding: 0;
 </style>
     <div id="slide">
       <div id="slidegraphic">
-        <?php print render($content['field_slideshow_picture']); ?>
+        <img src="<?php print image_style_url('banner_graphic', $node->field_slideshow_picture['und'][0]['uri']); ?>"
+             class="image-style-banner-graphic"
+             height="250" width="610" draggable="false" typeof="foaf:Image"
+             alt="<?php echo ($node->field_slideshow_picture['und'][0]['alt']); ?>">
       </div>
       <div id="transparency"></div>
       <div id="slidecontent">
