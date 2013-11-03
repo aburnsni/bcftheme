@@ -66,6 +66,45 @@
 }
 /* End Flexslider */
 
+/* Slideshow */
+#transparency {
+  position: absolute;
+  left:0px;
+  top:85%;
+  height:15%;
+  width:100%;
+  background-color:#000;
+  filter:alpha(opacity=80);
+  opacity:0.8;
+  -moz-opacity:0.8;
+}
+#slidecontent {
+  position: absolute;
+  bottom: 3%;
+  left:3%;
+  font-size: 130%;
+  color: #fff;
+}
+#slidecontent a, #slidecontent a.active, #slidecontent a.active {
+  color: #FCFBFB;
+}
+@media only screen and (max-width:600px) {
+  #slidecontent {
+    font-size: 75%;
+  }
+}
+#slidegraphic .field-type-image figure {
+  margin: 0;
+}
+#slidegraphic .field {
+padding: 0;
+}
+
+.flex-direction-nav {
+  line-height: 1;
+}
+/* End Slideshow */
+
 /* Social Media Links */
 #followus {
   margin:1em 0;

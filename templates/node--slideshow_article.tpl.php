@@ -35,41 +35,6 @@
   $sslink = field_view_value('node', $node, 'field_link_to_article', $sslinknid[0]);
   $article_link = l($title,$sslink['#href'], array('absolute' => 'FALSE','html' => 'TRUE'));
 ?>
-<style>
-#transparency {
-  position: absolute;
-  left:0px;
-  top:85%;
-  height:15%;
-  width:100%;
-  background-color:#000;
-  filter:alpha(opacity=80);
-  opacity:0.8;
-  -moz-opacity:0.8;
-}
-#slidecontent {
-  position: absolute;
-  bottom: 3%;
-  left:3%;
-  font-size: 130%;
-  color: #fff;
-}
-@media only screen and (max-width:600px) {
-  #slidecontent {
-    font-size: 75%;
-  }
-}
-#slidegraphic .field-type-image figure {
-  margin: 0;
-}
-#slidegraphic .field {
-padding: 0;
-}
-
-.flex-direction-nav {
-  line-height: 1;
-}
-</style>
     <div id="slide">
       <div id="slidegraphic">
         <img src="<?php print image_style_url('banner_graphic', $node->field_slideshow_picture['und'][0]['uri']); ?>"
