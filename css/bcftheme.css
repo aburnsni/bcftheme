@@ -55,6 +55,46 @@
 {
   background:url("/sites/all/libraries/superfish/images/arrows-777777.png") no-repeat scroll -10px -100px transparent;
 }
+
+div.sf-accordion-toggle.sf-style-default a {
+background-color: rgb(46, 46, 45);
+border-left: 1px solid #f8f8f8;
+border-right: 1px solid #f8f8f8;
+border-top: none;
+color: #f8f8f8;
+padding: 1em 1em .5em 1em;
+-moz-border-radius: 0 0 6px 6px;
+-webkit-border-top-left-radius: 0;
+-webkit-border-top-right-radius: 0;
+-webkit-border-bottom-right-radius: 6px;
+-webkit-border-bottom-left-radius: 6px;
+-khtml-border-radius-topleft: 0;
+-khtml-border-radius-topright: 0;
+-khtml-border-radius-bottomright: 6px;
+-khtml-border-radius-bottomleft: 6px;
+border-radius: 0 0 6px 6px;
+}
+
+div.sf-accordion-toggle.sf-style-default a.sf-expanded {
+background-color: #f8f8f8;
+border-left: 1px solid #f8f8f8;
+border-right: 1px solid #f8f8f8;
+border-top: none;
+color: rgb(46, 46, 45);
+padding: 1em 1em .5em 1em;
+-moz-border-radius: 0 0 6px 6px;
+-webkit-border-top-left-radius: 0;
+-webkit-border-top-right-radius: 0;
+-webkit-border-bottom-right-radius: 6px;
+-webkit-border-bottom-left-radius: 6px;
+-khtml-border-radius-topleft: 0;
+-khtml-border-radius-topright: 0;
+-khtml-border-radius-bottomright: 6px;
+-khtml-border-radius-bottomleft: 6px;
+border-radius: 0 0 6px 6px;
+}
+
+
 /* End Superfish menu corrections */
 
 /* FlexSlider */
