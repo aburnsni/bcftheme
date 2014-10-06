@@ -110,7 +110,7 @@ border-radius: 0 0 6px 6px;
 /* End Flexslider */
 
 /* Slideshow */
-#transparency {
+.transparency {
   position: absolute;
   left:0px;
   top:85%;
@@ -121,25 +121,25 @@ border-radius: 0 0 6px 6px;
   opacity:0.8;
   -moz-opacity:0.8;
 }
-#slidecontent {
+.slidecontent {
   position: absolute;
   bottom: 3%;
   left:3%;
   font-size: 130%;
   color: #fff;
 }
-#slidecontent a, #slidecontent a.active, #slidecontent a.active {
+.slidecontent a, .slidecontent a.active, .slidecontent a.active {
   color: #FCFBFB;
 }
 @media only screen and (max-width:600px) {
-  #slidecontent {
+  .slidecontent {
     font-size: 75%;
   }
 }
-#slidegraphic .field-type-image figure {
+.slidegraphic .field-type-image figure {
   margin: 0;
 }
-#slidegraphic .field {
+.slidegraphic .field {
 padding: 0;
 }
 

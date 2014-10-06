@@ -35,15 +35,15 @@
   $sslink = field_view_value('node', $node, 'field_link_to_article', $sslinknid[0]);
   $article_link = l($title,$sslink['#href'], array('absolute' => 'FALSE','html' => 'TRUE'));
 ?>
-    <div id="slide">
-      <div id="slidegraphic">
+    <div class="slide">
+      <div class="slidegraphic">
         <img src="<?php print image_style_url('banner_graphic', $node->field_slideshow_picture['und'][0]['uri']); ?>"
              class="image-style-banner-graphic"
              height="250" width="610" draggable="false" typeof="foaf:Image"
              alt="<?php echo ($node->field_slideshow_picture['und'][0]['alt']); ?>">
       </div>
-      <div id="transparency"></div>
-      <div id="slidecontent">
+      <div class="transparency"></div>
+      <div class="slidecontent">
         <?php echo $article_link;?>
       </div>
     </div>
