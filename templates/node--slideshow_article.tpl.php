@@ -1,6 +1,6 @@
 <?php if ($page): ?>
 <!-- <?php print '<pre>'; print_r($node); print '</pre>'; ?> -->
-<?php print_r($node->field_slideshow_picture); ?>
+<!-- <?php print_r($node->field_slideshow_picture); ?> -->
 
   <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
